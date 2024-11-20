@@ -5,7 +5,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 app = Flask(__name__)
 
 # Load BioGPT model
-model_name = "microsoft/BioGPT-Large"
+model_name = "microsoft/BioGPT"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
